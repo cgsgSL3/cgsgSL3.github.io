@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf_8" />
+    <titel> 03.06.2023 </titel>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="a1">?</div>
+    <canvas
+      id="myCan"
+      width="1002px"
+      height="1002px"
+      style="border: 1px Solid Red"
+      onmousemove="myDragHande(event, this)"
+      onmousewheel="myWheelHandle(event, this)"
+    ></canvas>
+    <form action='index.html' method='get'>
+      <br /><input type="text" name="a" value="SL3" />
+      <br /><input type="time" name="b" value="12:35" />
+      <br /><input type="date" name="c" value="2023-02-08" />
+      <br /><input type="checkbox" name="d" checked />
+      <br /><input type="radio" name="E" checked />
+      <input type="submit" name="sub" value="Send"/>
+      <br />Color:<input type="color" name="color" value="#FF00FF" />    
+    </form> 
+    
+    <style>
+      input, select, button
+      {
+        zoom: 2.0;
+      }
+      form
+      {
+        font-size:2em; 
+      }
+    </style>
+    <script src="/main.js">   </script>
+        <div>
+            <canvas id="glCanvas" width="200" height="200"></canvas>
+        </div>   
+</body>
+</html>
+
